@@ -244,5 +244,41 @@ footer {
     <p>© 2026 PsandyFX. All rights reserved.</p>
 </footer>
 
+      "
+
 </body>
+    <section style="padding:25px; background:#101827; color:white;">
+  <h2>PSANDY FX – Forex Market</h2>
+  <p>Forex market prices and currency movements</p>
+
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js"
+      async>
+    {
+      "colorTheme": "dark",
+      "dateRange": "1D",
+      "showChart": true,
+      "locale": "en",
+      "width": "100%",
+      "height": "500",
+      "isTransparent": true,
+      "showSymbolLogo": true,
+      "tabs": [
+        {
+          "title": "Forex",
+          "symbols": [
+            {"s": "FX:EURUSD", "d": "EUR/USD"},
+            {"s": "FX:GBPUSD", "d": "GBP/USD"},
+            {"s": "FX:USDJPY", "d": "USD/JPY"},
+            {"s": "FX:AUDUSD", "d": "AUD/USD"}
+          ]
+        }
+      ]
+    }
+    </script>
+  </div>
+</section>
 </html>
